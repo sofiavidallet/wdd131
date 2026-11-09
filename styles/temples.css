@@ -36,7 +36,7 @@ h1 {
 }
 
 
-.navigation {
+nav {
     display: none; 
     flex-direction: column;
     background-color: #333;
@@ -47,11 +47,11 @@ h1 {
 }
 
 
-.navigation.open {
+nav.open {
     display: flex;
 }
 
-.navigation a {
+nav a {
     display: block;
     padding: 1rem;
     text-align: center;
@@ -61,13 +61,12 @@ h1 {
     border-bottom: 1px solid #555;
 }
 
-
-.navigation a:hover {
+nav a:hover {
     background-color: #7a3a7b; 
 }
 
 
-.navigation a.active {
+nav a.active {
     background-color: rgba(0,0,0,0.3);
 }
 

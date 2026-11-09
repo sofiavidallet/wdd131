@@ -5,7 +5,7 @@
         display: none;
     }
 
-    .navigation {
+    nav {
         display: flex;
         flex-direction: row;
         position: static; 
@@ -13,7 +13,7 @@
         background-color: transparent;
     }
 
-    .navigation a {
+    nav a {
         border-bottom: none; 
         padding: 0.5rem 1rem;
         border-radius: 4px;  
