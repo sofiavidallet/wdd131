@@ -1,0 +1,64 @@
+body {
+	font-family: Roboto, helvetica, sans-serif;
+    /* Principio: Tipografía. Se agrega un interlineado estándar para mejorar la lectura */
+    line-height: 1.5;
+}
+
+header,
+main,
+footer {
+	max-width: 760px;
+	margin: 0 auto;
+}
+
+/* Reemplazamos el marquee por una clase banner estática */
+.banner {
+	padding: 1rem;
+	background-color: #eee;
+    text-align: center;
+}
+
+h1 {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Configuramos la cuadrícula (grid) de dos columnas */
+main {
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem; /* Añade bastante espacio en blanco entre las columnas */
+}
+
+/* Forzamos a que el título (h2) y la caja (callout) ocupen ambas columnas */
+h2, .callout {
+    grid-column: 1 / -1;
+}
+
+/* Alineación a la izquierda para mantener la consistencia */
+h2 {
+	color: navy;
+	text-align: left; 
+}
+
+/* Quitamos el text-align: justify; porque suele causar espacios irregulares y dificulta la lectura */
+article p {
+	text-align: left;
+}
+
+/* Arreglamos el contraste y el espaciado (padding) */
+.callout {
+    /* Cambiamos el color del texto a blanco para un alto contraste contra el morado oscuro */
+	color: #ffffff; 
+	background-color: #702963;
+    padding: 1.5rem; /* Añade espacio en blanco dentro de la caja */
+    border-radius: 5px;
+}
+
+/* Movemos el contenido del pie de página hacia la izquierda */
+footer {
+	margin-top: 1rem;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	font-size: smaller;
+	text-align: left; 
+    padding: 1rem 0;
+}
