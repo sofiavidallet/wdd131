@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+header {
+    background-color: #4a154b;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+#menu {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    border-bottom: 1px solid #555;
+}
+
+nav a:hover {
+    background-color: #7a3a7b;
+}
+
+nav a.active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+main h2 {
+    margin: 1rem 0;
+    color: #4a154b;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+.res-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+.temple-card {
+    background-color: #eeeeee;
+    border: 1px solid #d4d4d4;
+    padding: 1.25rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.temple-card h3 {
+    margin-bottom: 0.75rem;
+    font-size: 1.4rem;
+}
+
+.temple-card p {
+    margin: 0.2rem 0;
+    font-size: 0.9rem;
+}
+
+.temple-card .label {
+    color: #4b1d70;
+    font-variant: small-caps;
+    font-weight: 600;
+}
+
+.temple-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    margin-top: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+    object-fit: cover;
+}
+
+footer {
+    background-color: #4a154b;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}

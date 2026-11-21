@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #222222;
+  text-align: center;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 450px;
+  padding: 1.5rem 1rem;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+}
+
+main img {
+  display: block;
+  width: 400px;
+  height: 600px;
+  margin: 1.5rem auto;
+  background-color: #000000;
+  animation: fade 5s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+footer {
+  background-color: #222222;
+  color: #ffffff;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  line-height: 1.6;
+}
